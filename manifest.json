@@ -1,0 +1,20 @@
+{
+  "name": "JSFoo + Meta Refresh",
+  "short_name": "JSFoo + Meta Refresh",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/?utm_source=app_homescreen",
+  
+  "theme_color": "#549EAF",
+  
+  "background_color": "#FAFAFA",
+  "description": "A community and conference on JavaScript",
+  
+  "icons": [
+    
+    {"src":"images/touch/jsfoo-icon-300.png","sizes":"300x300","type":"image/png"}
+    
+    
+  ]
+  
+}

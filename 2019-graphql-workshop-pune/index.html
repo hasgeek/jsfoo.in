@@ -1,0 +1,871 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="svg inlinesvg">
+  <head>
+    <title>Workshop on GraphQL using Apollo - JSFoo + Meta Refresh</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    
+    <meta name="theme-color" content="#549EAF"/>
+    
+    
+    <meta name="description" content="This workshop starts with understanding the basics of GraphQL Schema before exploring how to use "Apollo-Graphql", best practices and introduction to quires and Github V4 GraphQL APIs while building an application.">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="../images/hg-favicon.ico" />
+    <link rel="author" href="https://plus.google.com/" />    
+
+    
+      
+    
+
+    <meta property="og:url" content="https://jsfoo.in/2019-graphql-workshop-pune/">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="This workshop starts with understanding the basics of GraphQL Schema before exploring how to use "Apollo-Graphql", best practices and introduction to quires and Github V4 GraphQL APIs while building an application.">
+    <meta property="og:title" content="Workshop on GraphQL using Apollo - JSFoo + Meta Refresh">
+    <meta property="og:site_name" content="JSFoo + Meta Refresh">
+    <meta property="og:see_also" content="https://jsfoo.in">
+    <meta property="og:type" content="website">
+
+    <meta itemprop="name" content="Workshop on GraphQL using Apollo - JSFoo + Meta Refresh">
+    <meta itemprop="description" content="This workshop starts with understanding the basics of GraphQL Schema before exploring how to use "Apollo-Graphql", best practices and introduction to quires and Github V4 GraphQL APIs while building an application.">
+    <meta itemprop="image" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://jsfoo.in/2019-graphql-workshop-pune/">
+    <meta name="twitter:title" content="Workshop on GraphQL using Apollo - JSFoo + Meta Refresh">
+    <meta name="twitter:description" content="This workshop starts with understanding the basics of GraphQL Schema before exploring how to use "Apollo-Graphql", best practices and introduction to quires and Github V4 GraphQL APIs while building an application.">
+    <meta name="twitter:image" content="">
+
+
+    
+    <link rel="manifest" href="https://jsfoo.in/manifest.json">
+    
+    <link rel="stylesheet" href="../css/main.css">
+
+    
+
+    
+      
+      <link rel="stylesheet" href="../css/leaflet.css">
+      
+    
+
+    <link rel="stylesheet" href="../css/jquery.sidr.2.2.1.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+<body class="bg-light">
+  
+
+
+
+
+
+
+
+
+
+
+<div id="sidebar" style="display:none;">
+  <nav class="nav has-shadow">
+    <div class="container">
+      <a class="nav-item is-hidden-tablet" href="https://jsfoo.in/" >
+        JSFoo + Meta Refresh
+      </a>
+      <div class="nav-right nav-menu is-active">
+        
+        
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="nav has-shadow is-hidden-mobile">
+  <div class="container">
+    <a class="nav-item nav-home" href="https://jsfoo.in/" >
+      JSFoo + Meta Refresh
+    </a>
+    <div class="nav-left">
+      
+      
+    </div>
+  </div>
+</nav>
+
+
+    <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "Workshop on GraphQL using Apollo",
+    "startDate": "2019-01-12",
+    "location": {
+      "@type": "Place",
+      "name": "Equal Experts, Pune.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pune",
+        "addressCountry": "IN"
+      }
+    },
+    
+    "description": "This workshop starts with understanding the basics of GraphQL Schema before exploring how to use "Apollo-Graphql", best practices and introduction to quires and Github V4 GraphQL APIs while building an application.",
+    "endDate": "2019-01-12",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://jsfoo.in/2019-graphql-workshop-pune/"
+    }
+  }
+  </script>
+
+  
+<section class="hero is-halfheight is-primary is-bold">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        Workshop on GraphQL using Apollo
+      </h1>
+      
+      <h2 class="subtitle">
+        Learn GraphQL and its advantages by building simple application with Apollo.
+      </h2>
+      
+      <h3 class="subtitle is-6">9:30 AM to 5:30 PM, 12 Jan 2019, Equal Experts, Pune</h3>
+
+      <div class="block">
+        
+        <a class="button is-primary" href="index.html#tickets" data-href="#tickets">Buy Tickets</a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+  <div style="z-index:10;">
+    <nav class="nav has-shadow nav-sticky" style="z-index:10;">
+      <div class="container">
+        <div class="nav-left" style="z-index:10;">
+          <span class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          
+          <a class="nav-item is-tab is-hidden-tablet" data-href="#overview">Overview</a>
+          
+          
+          <a class="nav-item is-tab is-hidden-tablet" data-href="#instructors">Instructors</a>
+          
+          <!-- <li><a href="#schedule">Schedule</a></li> -->
+          
+          <a class="nav-item is-tab is-hidden-tablet" data-href="#tickets">Tickets</a>
+          
+          
+          <a class="nav-item is-tab is-hidden-tablet" data-href="#venue">Venue</a>
+          
+          
+          <a class="nav-item is-tab is-hidden-tablet" data-href="#sponsor">Sponsors</a>
+          
+          <a class="nav-item is-tab is-hidden-tablet" data-href="#hasgeek">About HasGeek</a>
+          <a class="nav-item is-tab is-hidden-tablet" href="https://jsfoo.in/code-of-conduct">Code of Conduct</a>
+        </div>
+        <div class="nav-center" style="z-index:10;">
+          
+          <a class="nav-item is-tab is-hidden-mobile" data-href="#overview">Overview</a>
+          
+          
+          <a class="nav-item is-tab is-hidden-mobile" data-href="#instructors">Instructors</a>
+          
+          <!-- <li><a href="#schedule">Schedule</a></li> -->
+          
+          <a class="nav-item is-tab is-hidden-mobile" data-href="#tickets">Tickets</a>
+          
+          
+          <a class="nav-item is-tab is-hidden-mobile" data-href="#venue">Venue</a>
+          
+          
+          <a class="nav-item is-tab is-hidden-mobile" data-href="#sponsor">Sponsors</a>
+          
+          <a class="nav-item is-tab is-hidden-mobile" data-href="#hasgeek">About HasGeek</a>
+          <a class="nav-item is-tab is-hidden-mobile" href="https://jsfoo.in/code-of-conduct">Code of Conduct</a>
+        </div>
+        <div class="nav-right">
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<!--/.Secondary Navbar -->
+
+
+<section class="section" id="overview">
+  <div class="container">
+    <div class="columns has-text-justified">
+    
+    <div class="column">
+      <div class="content">
+        
+<h1 id="abstract">Abstract</h1>
+
+<p>GraphQL is a query language built by Facebook. GraphQL overcomes many limitation of REST APIs. Today, it is used by many big companies in production like GitHub, Netflix, Airbnb, etc.</p>
+
+<p>In the workshop, we will cover following points:</p>
+
+<ul>
+  <li>Introduction to GraphQL and its basic.</li>
+  <li>Build GraphQL server using Apollo-Server.</li>
+  <li>Build React GraphQL client using Apollo-Client and build react component to consume the GraphQL APIs.</li>
+</ul>
+
+<h1 id="requirements">Requirements</h1>
+
+<ul>
+  <li>Laptop should have node (&gt;=6) and npm (&gt;=4) / or yarn.</li>
+  <li>Postgres installed (<a href="http://postgresguide.com/setup/install.html" target="_blank">http://postgresguide.com/setup/install.html</a>).</li>
+  <li>Basics of Javascript</li>
+  <li>Understandings of React is useful</li>
+</ul>
+
+<h1 id="duration-5-hours">Duration: 5 Hours</h1>
+
+      </div>
+    </div>
+    
+    
+    
+    <div class="column">
+      <div class="content">
+        <h1 id="outline">Outline</h1>
+
+<ul>
+  <li>Introduction to GraphQL
+    <ul>
+      <li>GraphQL History</li>
+    </ul>
+  </li>
+  <li>
+    <p>Shortcomings of REST</p>
+  </li>
+  <li>What is GraphQL?
+    <ul>
+      <li>How GraphQL eliminates the REST limitations</li>
+      <li>Advantages of GraphQL</li>
+    </ul>
+  </li>
+  <li>
+    <p>Diving in the sample Application: Setting it up</p>
+  </li>
+  <li>
+    <p>What is GraphQL schema?</p>
+  </li>
+  <li>
+    <p>What are types in GraphQL</p>
+  </li>
+  <li>Introduction to GraphQL Queries
+    <ul>
+      <li>Examples of writing queries in the GraphQL playground</li>
+    </ul>
+  </li>
+  <li>
+    <p>Introduction to Mutation</p>
+  </li>
+  <li>
+    <p>Introduction to GraphQL clients: Apollo and Relay</p>
+  </li>
+  <li>Building a sample application using Apollo</li>
+</ul>
+
+      </div>
+    </div>
+    
+</div>
+
+  </div>
+</section>
+
+
+
+<section class="section" id="instructors">
+  <div class="container">
+    <div class="has-text-centered">
+  <h3 class="title">Instructors</h3>
+  <br>
+</div>
+<div class="columns is-centered is-multiline">
+  
+  
+  <div class="column is-3">
+    <div class="card is-clickable" onclick="showModal('instructor-abhay-nikam')" data-href="view Abhay Nikam" data-label="open Modal">
+      <div class="card-content">
+        <div class="media">
+          
+          <div class="media-left">
+            <figure class="image is-64x64" style="background-image: url('https://images.hasgeek.com/embed/file/e12fe716dd824a7296130c1ce272084d'); background-size: cover; background-position: center;">
+            </figure>
+          </div>
+          
+          <div class="media-content">
+            <p class="title is-4">Abhay Nikam</p>
+            <p class="subtitle is-6">Software Developer, BigBinary</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="instructor-abhay-nikam" style="z-index:20;">
+      <div class="modal-background" onclick="hideModal('instructor-abhay-nikam')"></div>
+      <div class="modal-content">
+        <div class="box">
+          <div class="media has-text-centered">
+
+            
+            <div class="media-left">
+              <figure class="image is-128x128" style="background-image: url('https://images.hasgeek.com/embed/file/e12fe716dd824a7296130c1ce272084d'); background-size: cover; background-position: center;">
+              </figure>
+            </div>
+            
+            <div class="media-content">
+              <p class="title is-4">Abhay Nikam</p>
+              <p class="subtitle is-6">Software Developer, BigBinary</p>
+              
+              <a href="https://github.com/abhaynikam" target="_blank">Github</a>
+              
+            </div>
+          </div>
+          <div class="content">
+            <p>Abhay is a Ruby on Rails and Frontend developer. He is passionate about learning new technologies and tries to contribute to the open-source community. Abhay loves basketball and is a huge fan of Golden State Warriors NBA team. He also loves travelling and playing outdoor sports like basketball, cricket.</p>
+
+          </div>
+        </div>
+      </div>
+      <button class="modal-close is-large" onclick="hideModal('instructor-abhay-nikam')"></button>
+    </div>
+  </div>
+  
+</div>
+
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container">
+    
+
+
+  
+    
+    
+    
+    
+
+
+
+
+
+    
+
+  
+
+
+  
+    
+    
+    
+    
+
+
+
+
+
+    
+
+  
+
+
+  
+    
+    
+    
+    
+
+
+
+
+
+    
+
+  
+
+
+
+
+<div class="has-text-centered">
+    <h1 class="title">What else is happening?</h1>
+    <h2 class="subtitle">You may also be interested in these related events</h2>
+    <br>
+</div>
+
+<div class="columns is-centered is-multiline">
+
+</div>
+
+  </div>
+</section>
+
+
+
+<section class="section" id="tickets">
+  <div class="container">
+    <div class="has-text-centered">
+  <h1 class="title">Tickets</h1>
+</div>
+<div id="boxoffice-widget"><h2>Loading...</h2></div>
+
+  </div>
+</section>
+
+
+
+<section class="section "id="venue">
+  <div class="container">
+    <div class="has-text-centered">
+  <h1 class="title">Venue</h1>
+</div>
+<div id="venue-map" class="embed-map" data-label="Equal Experts, Pune." data-markerlat="18.5450838" data-markerlng="73.9098423" data-style="" data-accesstoken="" style="height: 400px; width: 100%; z-index: 0; margin-top:10px"><h2>Loading...</h2></div>
+<div class="has-text-centered">
+  <br>
+  
+  <div class="content">
+    <p>Equal Experts India Pvt Ltd, Office No. 502B, 5th Floor, Cerebrum IT Park No. B1 Kumar City, Marigold complex, Kalyani Nagar, Pune, Maharashtra 411006</p>
+
+  </div>
+  
+  
+  <a class="button is-primary" href="https://goo.gl/maps/x8NN11HToE22" target="_blank">Directions</a>
+  
+</div>
+
+  </div>
+</section>
+
+
+
+
+
+  <section class="section bg-light"id="sponsor">
+  <div class="container">
+    <div class="has-text-centered">
+      <h1 class="title">Sponsors</h1>
+      <div class="content"><p>Interested in sponsoring Workshop on GraphQL using Apollo?</p>
+</div>
+      
+    </div>
+  </div>
+</section>
+<section class="section bg-light">
+  <div class="container">
+        
+          
+
+            
+
+          <div class="columns is-centered">
+              <div class="column is-4">
+                <h3 class="title is-4">Venue Sponsors</h3>
+              </div>
+              <div class="column is-8">
+                <div class="columns is-multiline">
+                  
+                    
+                    <div class="column is-6">
+                      <div class="card is-clickable has-text-centered" style="cursor: pointer;" onclick="showModal('sponsor-venue-sponsors-equal-experts')" data-href="view Equal Experts" data-label="open Modal">
+                        <div class="card-content">
+                          <div style="height: 8rem; align-items:center; justify-content: center; display: flex;">
+                            <figure class="image">
+                              <img src="https://images.hasgeek.com/embed/file/02d66de061d543b9a1df5ed79c1d5746" alt="Equal Experts"style="max-height: 8rem;width: auto;display: block;">
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal" id="sponsor-venue-sponsors-equal-experts" style="z-index:20;">
+                      <div class="modal-background" onclick="hideModal('sponsor-venue-sponsors-equal-experts')"></div>
+                      <div class="modal-content">
+                        <div class="box">
+                          <figure class="image">
+                            <img src="https://images.hasgeek.com/embed/file/02d66de061d543b9a1df5ed79c1d5746" alt="Equal Experts"style="max-height: 60px;width: auto; margin: auto; padding-bottom: 20px;">
+                          </figure>
+                          <div class="has-text-centered" style="padding-bottom: 20px;">
+                            <p><a href="https://www.equalexperts.com/" target="_blank" class="click" data-label="view Equal Experts">www.equalexperts.com</a></p>
+                          </div>
+                          <div class="content">
+                            <p>At Equal Experts we help organisations achieve great things – processing millions of transactions per day in government; building top-5 mobile apps for iOS and Android; launching startups with lean, elegant technology and much, much more.
+We’re a community of over 750 experienced consultants (across eight countries, five continents), comprising user researchers, designers, strategic thinkers, product people, BAs, developers, architects, QAs, devops and more – all bound by our shared set of values.
+Our network model means experienced, pragmatic people are always invited to join us (even if you’re not looking for an imminent move). Once in the network you’re part of our community, and we’ll keep you informed of new developments and opportunities.
+When the time is right, we’ll work quickly to find you new challenges – always working with experienced, like-minded practitioners, and helping us achieve even greater things.</p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <button class="modal-close is-large" onclick="hideModal('sponsor-venue-sponsors-equal-experts')"></button>
+                    </div>
+                  
+                </div>
+              </div>
+          </div>
+          
+        
+  </div>
+</section>
+
+
+
+
+
+
+<footer class="footer" id="hasgeek">
+  <div class="container">
+    <div class="content has-text-centered">
+      <img src="https://hasgeek.com/static/img/hg-banner.png" alt="" width="100px"><br><br>
+      <p>JSFoo + Meta Refresh is presented to you by HasGeek.</p>
+      <p><a href="http://hasgeek.com/" target="_blank">HasGeek</a> helps people in technology meet each other, collaborate on new opportunities and advance the state of the art. We organize conferences, hacknights, workshops and geekups, and provide tools for communities to self-organize.</p>
+      <p>We’ve created conferences around the themes of <a href="http://metarefresh.in/" target="_blank">front end engineering</a>, <a href="http://fifthelephant.in/" target="_blank">big data and cloud computing</a>, <a href="http://jsfoo.in/" target="_blank">JavaScript</a>, <a href="http://droidcon.in/" target="_blank">Android</a>, <a href="http://cartonama.com/" target="_blank">location-aware services</a> and <a href="http://rootconf.in/" target="_blank">DevOps</a>. Our <a href="http://hasjob.co" target="_blank">Job Board</a> is used by thousands of geeks every month to find new opportunities.</p>
+      <p>HasGeek is a technology company in the media business, bringing software automation to a traditionally people-intensive operation. HasGeek has organized over two dozen conferences attended by thousands of technology professionals, made several thousand connections, and built open source tools that are now used by many communities.</p>
+      <p>Email us: <a href="mailto:info@hasgeek.com">info@hasgeek.com</a> | Call us: <a href="tel:+917676332020">+91 7676 33 2020</a></p>
+      <p>Copyright © 2010-2018</p>
+      <p>All rights reserved</p>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery.sidr-2.2.1.min.js"></script>
+  <script src="../js/mustache.min.js"></script>
+  <script src="../js/siema.min.js"></script>
+
+  
+  <script src="../js/leaflet.js"></script>
+  
+
+
+
+
+<script>
+    window.EventDetails = {};
+    // carousel
+    const mySiema = new Siema({
+      perPage: {
+        768: 2,
+        1024: 3,
+      },
+    });
+    const prev = document.querySelector('#carousel-prev');
+    const next = document.querySelector('#carousel-next');
+
+prev.addEventListener('click', () => mySiema.prev());
+next.addEventListener('click', () => mySiema.next());
+</script>
+<script>
+  $(document).ready( function() {
+
+    var stickyNav = $(".nav-sticky");
+    var navHeight;
+    if (stickyNav.length > 0) {
+      stuck = "nav-stuck";
+      headerHeight = $(stickyNav[0]).offset().top;
+      nextSibling = stickyNav.parent().next()[0];
+      navHeight = stickyNav[0].clientHeight;
+      $(window).scroll(function() {
+        if( $(this).scrollTop() > headerHeight) {
+          stickyNav.parent().addClass(stuck);
+          nextSibling.style.marginTop = navHeight+"px";
+        } else {
+          stickyNav.parent().removeClass(stuck);
+          nextSibling.style.marginTop = 0;
+        }
+      });
+    }
+    $("a").click(function (e) {
+      var goto = $(this).attr('data-href');
+      if (goto) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Scroll to section
+        var offset_top = $(goto).offset().top - navHeight || 0;
+        $("body,html").stop(true,true).animate({scrollTop:offset_top},300)
+      }
+    });
+
+    
+      initLeaflets();
+    
+
+    $('#sidebar').show();
+    $('.nav-toggle').sidr({
+      name: 'sidebar',
+      source: '#sidebar',
+      renaming: false
+    });
+
+  })
+
+  function goToUrl(url) {
+    window.location.href = url;
+  }
+  function goToUrlNewTab(url) {
+    var win = window.open(url, '_blank');
+    win.focus();
+  }
+  function showModal(modalId) {
+    $('#'+modalId).addClass('is-active');
+  }
+  function hideModal(modalId) {
+    $('#'+modalId).removeClass('is-active');
+  }
+</script>
+
+  <script type="text/javascript">
+$(document).ready(function() {
+
+  var boxofficeUrl = "https://boxoffice.hasgeek.com";
+
+  $.get({
+    url: boxofficeUrl + "/api/1/boxoffice.js",
+    crossDomain: true,
+    timeout: 8000,
+    retries: 5,
+    retryInterval: 8000,
+    success: function(data) {
+      var boxofficeScript = document.createElement('script');
+      boxofficeScript.innerHTML = data.script;
+      document.getElementsByTagName('body')[0].appendChild(boxofficeScript);
+    },
+    error: function(response) {
+      var ajaxLoad = this;
+      ajaxLoad.retries -= 1;
+      var errorMsg;
+      if (response.readyState === 4) {
+        errorMsg = "Server error, please try again later.";
+        $('#boxoffice-widget p').html(errorMsg);
+      }
+      else if (response.readyState === 0) {
+        if (ajaxLoad.retries < 0) {
+          if(!navigator.onLine) {
+            errorMsg = "Unable to connect. There is no network!";
+            $('#boxoffice-widget p').html(errorMsg);
+          }
+          else {
+            errorMsg = "<p>Unable to connect. If you are behind a firewall or using any script blocking extension (like Privacy Badger), please ensure your browser can load boxoffice.hasgeek.com, api.razorpay.com and checkout.razorpay.com .</p>";
+            $('#boxoffice-widget p').html(errorMsg);
+          }
+        } else {
+          setTimeout(function() {
+            $.get(ajaxLoad);
+          }, ajaxLoad.retryInterval);
+        }
+      }
+    }
+  });
+
+  window.addEventListener('onBoxofficeInit', function (e) {
+    window.Boxoffice.init({
+      org: "hasgeek",
+      itemCollection: "9da13f04-31de-495b-9f96-5b81b31abb96",
+      paymentDesc: "Workshop on GraphQL using Apollo",
+      
+    });
+  }, false);
+
+});
+</script>
+
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-19123154-15', 'auto');
+  ga('send', 'pageview');
+
+  $(document).ready( function() {
+
+    EventDetails.sendGA = function (category, action, label) {
+      if (typeof ga !== "undefined") {
+        ga('send', { hitType: 'event', eventCategory: category, eventAction: action, eventLabel: label});
+      }
+    };
+
+    // Function that tracks a click button in Google Analytics.
+    $('.button').click(function(event) {
+      var target = $(this).attr('href');
+      var action = $(this).html();
+      EventDetails.sendGA('click', action, target);
+    });
+
+    $('.is-clickable').click(function(event) {
+      var target = $(this).data('href');
+      var action = $(this).data('label');
+      EventDetails.sendGA('click', action, target);
+    });
+
+    $('.click').click(function(event) {
+      var target = $(this).attr('href');
+      var action = $(this).data('label');
+      EventDetails.sendGA('click', action, target);
+    });
+
+    $('.nav-item').click(function(event) {
+      var target = $(this).data('href');
+      EventDetails.sendGA('click', target, target);
+    });
+
+    $('#mc-embedded-subscribe').click(function(event) {
+      EventDetails.sendGA('event_page_blog', 'subscribe', '');
+    });
+
+    
+  });
+</script>
+
+<!-- Twitter universal website tag code -->
+<script>
+  !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+  },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+  a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+  // Insert Twitter Pixel ID and Standard Event data below
+  twq('init', 'o09dx');
+  twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '939847969521385'); 
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+   <img height="1" width="1" 
+  src="https://www.facebook.com/tr?id=939847969521385&ev=PageView
+  &noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- LinkedIn Insight Tag -->
+<script type="text/javascript"> _linkedin_partner_id = "245595"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=245595&fmt=gif" /> </noscript>
+
+<script>
+$(document).ready( function() {
+  $(document).on( "boxofficeTicketingEvents", function(event, userAction, label, value) {
+    
+    if (typeof ga !== "undefined") {
+      ga('send', { hitType: 'event', eventCategory: 'ticketing', eventAction: userAction, eventLabel: label, eventValue: value});
+    }
+
+    if (typeof fbq !== "undefined") {
+      if (userAction == 'add ticket' || userAction == 'First interaction') {
+        fbq('track', 'AddToCart');
+      } else if (userAction == 'checkout') {
+        fbq('track', 'InitiateCheckout');
+      } else if (userAction == 'order creation') {
+        fbq('track', 'AddPaymentInfo');
+      } else if(userAction == 'capture payment') {
+        fbq('track', 'Purchase', {value: value, currency: 'INR'});
+      } else if(userAction == 'booking complete') {
+        fbq('track', 'CompleteRegistration');
+      }
+    }
+
+    if (typeof twq !== "undefined") {
+      if (userAction == 'add ticket' || userAction == 'First interaction') {
+        twq('track', 'AddToCart', {
+          content_ids: ['ticketing'], // Required
+          content_type: 'tickets', // Required
+          content_name: 'tickets'
+        });
+      } else if(userAction == 'booking complete') {
+        twq('track','Purchase', {
+          value: value,
+          currency: 'INR',
+          num_items: '1',
+        });
+      }
+    }
+
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+  // Unregister service worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      if(registrations.length) {
+        for (var index = 0; index < registrations.length; index++) {
+          registrations[index].unregister();
+        }
+      }
+    });
+  }
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('https://jsfoo.in/sw.js').then(function () {
+//     // console.log('Service worker registered');
+//     }).catch(function() {
+//     // console.log('Service worker registration failed');
+//   });
+// };
+</script>
+
+
+</body>
+</html>

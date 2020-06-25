@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9">     <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js">        <!--<![endif]-->
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Workshops in JSFoo 2016">
+<meta name="author" content="HasGeek and friends">
+<meta name="keywords" content="Conference, Workshop, Javascript, Node.js, JS, Front-end, Web apps, Progressive web apps, ReactJS, Build tools, Bangalore, Bengaluru, India"> 
+
+<meta property="og:title" content="NodeJS Workshop — JSFoo 2016"/>
+<meta property="og:image" content="https://images.hasgeek.com/embed/file/cd665bc09fc84671b62641a9ea8821f5"/>
+<meta property="og:url" content="https://jsfoo.in/2016/nodejs-workshop"/>
+<meta property="og:description" content="Workshops in JSFoo 2016"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@jsfoo" /> 
+<meta name="twitter:title" content="NodeJS Workshop — JSFoo 2016" /> 
+<meta name="twitter:image" content="https://images.hasgeek.com/embed/file/0473049b37a640bcb072adc3e010e70f">
+
+<meta property="fb:app_id" content="1261802420505437" />
+
+<link rel="shortcut icon" type="image/x-icon" href="https://jsfoo.in/favicon.ico">
+<link rel="icon" type="image/x-icon" href="https://jsfoo.in/favicon.ico">
+
+<title>NodeJS Workshop — JSFoo 2016</title>
+  <link rel="stylesheet" href="../_themes/jsfoo2016/css/vendor/bootstrap.min.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/jsfoo2016/css/font-awesome.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/jsfoo2016/css/main.css.packed.css"/>
+  
+
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.min.css" />
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600italic,400,600" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Syncopate:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../_baseframe/css/networkbar.css">
+
+
+</head>
+<body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1261802420505437',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="">
+  
+    <div id="hg-bar" class="no-print">
+    <div class="container">
+          <ul id="hg-barlinks">
+            
+    <li id="hg-networkbar-home" class="strong"><a href="https://hasgeek.com/">HasGeek</a></li>
+    <li id="hg-networkbar-hasjob"><a href="https://hasjob.co/">Hasjob</a></li>
+    <li id="hg-networkbar-hgtv"><a href="https://hasgeek.tv/">HGTV</a></li>
+    <li id="hg-networkbar-talkfunnel"><a href="https://talkfunnel.com/">Talkfunnel</a></li>
+    <li id="hg-networkbar-events" class="selected"><a href="nodejs-workshop.html#" class="hg-submenu">Events</a>
+        <ul>
+          
+    <li id="hg-networkbar-metarefresh"><a href="https://metarefresh.in/">Meta Refresh</a></li>
+    <li id="hg-networkbar-rootconf"><a href="https://rootconf.in/">Rootconf</a></li>
+    <li id="hg-networkbar-fifthelephant"><a href="https://fifthelephant.in/">The Fifth Elephant</a></li>
+    <li id="hg-networkbar-jsfoo"><a href="https://jsfoo.in/">JSFoo</a></li>
+    <li id="hg-networkbar-droidcon"><a href="https://droidcon.in/">Droidcon India</a></li>
+    <li id="hg-networkbar-pastevents" class="hg-menu-section">Past events</li>
+    <li id="hg-networkbar-angularjs-miniconf"><a href="https://metarefresh.in/2014/angularjs-miniconf">AngularJS Miniconf</a></li>
+    <li id="hg-networkbar-cartonama"><a href="https://cartonama.com/2012">Cartonama Conference</a></li>
+    <li id="hg-networkbar-phpcloud"><a href="https://phpcloud.hasgeek.com/">Scaling PHP in the Cloud</a></li>
+    <li id="hg-networkbar-androidcamp"><a href="https://androidcamp.hasgeek.com/">AndroidCamp</a></li>
+    <li id="hg-networkbar-doctypehtml5"><a href="http://www.doctypehtml5.in/">DocType HTML5</a></li>
+        </ul></li>
+          </ul>
+        <ul id="hg-usertools">
+          
+            <li><a href="https://jsfoo.in/login">Login or sign up</a></li>
+        </ul>
+    </div>
+  </div>
+  
+</div>
+  
+<div id="page">
+
+  <div class="container-fluid fill-primary">
+    <div class="row-fluid space-half-bottom">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div id="cog" class="space-one-top">
+          <a class="push-two-top ir logo-small" href="https://jsfoo.in/2016">
+            JSFoo 2016</a>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <nav id="site-nav" class="navbar center-xs">
+              <ul class="list-plain link-silent legible inline-block space-one-top">
+                <!--<li><a class="push-two-top" href="/2015/#conference">Conference</a></li>
+                <li><a class="push-two-top" href="/2015/#workshops">Workshops</a></li>
+                <li><a class="push-two-top" href="/2015/#run-up-events">Run-up Events</a></li>-->
+                <li>
+                  <div class="dropdown link-silent tiny">
+                    <a id="editions" data-toggle="dropdown" href="nodejs-workshop.html#">&nbsp;Bangalore 2016 <i class="fa fa-caret-down"></i>&nbsp;</a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a class="push-1q" href="https://jsfoo.in/2015/" target="_blank">Bangalore 2015</a></li>
+                      <li><a class="push-1q" href="https://jsfoo.in/2014/" target="_blank">Bangalore 2014</a></li>
+                      <li><a class="push-1q" href="https://jsfoo.in/2013/" target="_blank">Bangalore 2013</a></li>
+                      <li><a class="push-1q" href="https://jsfoo.in/2012/" target="_blank">Bangalore 2012</a></li>
+                      <li><a class="push-1q" href="https://jsfoo.in/chennai2012/" target="_blank">Chennai 2012</a></li>
+                      <li><a class="push-1q" class="push-1q" href="https://jsfoo.in/pune2012/" target="_blank">Pune 2012</a></li>
+                      <li><a class="push-1q" href="https://jsfoo.in/bangalore2011/" target="_blank">Bangalore 2011</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-sm-6">
+            <div class="flushleft space-one center-xs">
+            
+              <p class="space-one"><a href="https://www.flickr.com/photos/hasgeek/sets/72157670760406864" class="button regular-prose dark" target="_blank">Event photos</a></p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+
+
+
+
+
+  
+  
+  <section id="" class="clearfix">
+<div class="container-fluid">
+  
+  
+  <div id="node-js-1" class="row push-two-bottom pad-3q session">
+    <div class="row">
+      <h3 class="legible nospace-top medium push-one-top pad-half darkblue bold text-center">NodeJS Workshop</h3>
+      <div class="col-md-4 col-xs-12 speaker-bio">
+        <div class="clearfix nospace-top push-one-top space-half-bottom"><img src="https://imgee.s3.amazonaws.com/imgee/c188ec0ebb304e9ebec13daa20dab42e.jpeg" alt="" class="center-block speaker-photo  speaker-photo-small "><img src="https://images.hasgeek.com/embed/file/6209f1520252462896c2e8cbb44756d2" alt="" class="center-block speaker-photo  speaker-photo-small "></div>
+        <h4 class="regular prose-type calm all-caps space-1q-top nospace-bottom darkblue bold text-center">Arunkumar Krishnamoorthy &amp; Arun Vijayarengan</h4>
+        
+        
+        <div class="secondary space-1q-top nospace-bottom text-center"><p><strong>Arunkumar</strong> is a full-stack Solution Architect fluent in Java, Javascript, Android, Scala, and SQL/NoSQL platforms with more than 16 years of development experience in multiple leadership roles.</p><p><strong>Arun Vijayarengan</strong> has more than a decade of professional on front-end work, pursuing good UX design, usability and accessibility with HTML, CSS and JavaScript. He keeps himself busy with things like the latest JS standard (ECMAScript 2015), Javascript libraries such as React JS, Angular 2, NodeJS and related frameworks.</p></div>
+        
+      </div>
+      <div class="col-md-8 col-xs-12">
+        
+        
+        
+        <div class="regular space-one pad-half link-silent"><h2 class="legible semibold space-half">Description</h2><p>Javascript is a really general purpose programming language, and can be used to build a variety of applications from desktop tools to fully-functional, robust enterprise applications.</p><p>This is an intensive hands-on workshop to fast track full-fledged enterprise application development on the NodeJS platform. The first of a 3 part series on NodeJS, focusing on establishing a strong foundation in server side Javascript.</p><p>You’ll walk away from this 2-day course confident in your ability to:<ul><li>Build applications using one of the most widely used Javascript server side engines</li><li>Build middleware using the Express Framework</li><li>Build automation using GruntJS</li><li>Use Javascript as a full-stack programming language</li></ul></p><p><strong>Day 1</strong><ul class="workshop-sessions"><li>Getting Started with Node.js<ul class="sessions-details"><li>Setup Node js</li><li>Hello Node</li><li>Modules and NPM</li><li>Accessing built-in modules</li><li>Using NPM to find 3rd party modules</li><li>Maintaining projects using NPM command</li><li>Creating Modules with getters and setters</li><li>Understanding module caching and scopes</li></ul></li><li>Events and Streams<ul class="sessions-details"><li>Node’s event loop</li><li>Events and EventEmitter class</li><li>Inheriting from EventEmitter</li><li>Readable and Writable Streams, the Pipe function</li><li>Piping Between Streams</li><li>Writing asynchronous code</li></ul></li><li>Accessing the Local System<ul class="sessions-details"><li>Process Object</li><li>Interacting with the file system</li><li>Buffers</li><li>OS Module</li></ul></li><li>Interacting with the Web<ul class="sessions-details"><li>Making web requests in Node</li><li>Web server in Node</li><li>Real time interaction with Socket.IO</li></ul></li></ul></p><p><strong>Day 2</strong><ul class="workshop-sessions"><li>Using Express Framework  <ul class="sessions-details"><li>Starting Express applications</li><li>Handling GET requests returning JSON</li><li>Navigating large datasets</li><li>Modifying data through PUT requests</li></ul></li><li>Sessions and Databases  <ul class="sessions-details"><li>Connecting to MongoDB via Mongoose</li><li>Designing schemas for collections in Mongoose</li><li>Querying MongoDB collections</li><li>Persisting Express sessions through MongoDB and mongo-connect</li></ul></li><li>Scaling node application  <ul class="sessions-details"><li>The Child Process module</li><li>Exec function</li><li>Spawn function</li><li>Fork function</li></ul></li><li>Overview of Grunt JS  <ul class="sessions-details"><li>Installing Grunt</li><li>Configuring Tasks</li><li>Creating Grunt tasks</li><li>Writing custom Grunt task</li></ul></li><li>Overview of MEAN stack  <ul class="sessions-details"><li>Install MEAN stack</li><li>Hands-on case study building web application on MEAN stack</li></ul></li></ul></p></div>
+        
+        
+        <div class="regular space-one-top pad-half link-silent session-links"><p class="legible semibold">Links</p><ul><li><a class="orange" href="http://www.ramselabs.com/workshops/nodejs.html" target="_blank">www.ramselabs.com/workshops/nodejs.html</a></li></ul></div>
+        <ul class="list-plain regular space-one-top pad-half">
+          <li class="space-1q">September 10-11, 2016</li>
+          <li class="space-1q">9:00 AM to 6:00 PM</li>
+          <li class="space-1q"><i class="fa fa-map-marker"></i>&nbsp; Quintype Office</li>
+          <li class="large space-1q bold">Rs. 4800</li>
+          <li class="space-1q"><a class="orange" target="_blank" href="https://ramselabs.talkfunnel.com/node-js-1/">Read workshop proposal</a></li>
+        </ul>
+<!--         <div class="space-one-top pad-half"><a href="https://in.explara.com/e/jsfoo-2015/checkout" class="button button-on-dark regular dark ticket-btn" title="JSFoo 2015 Tickets on Explara" target="_blank">Buy Tickets</a></div> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+</section>
+
+
+  
+  
+  <section id="workshop-venue" class="venue push-two clearfix fill-primary">
+  <div class="container">
+      <div class="row">
+          <h3 class="col-sm-12 col-xs-12 legible medium all-caps text-center space-one prose-type"> Workshop Venue </h3>
+      </div>
+      <div class="row">
+      
+          <div class="pad-line">
+              <div class="col-md-10 col-md-offset-1 col-sm-12 fill-darkgray col-xs-12 legible-prose text-center">
+                <div class="regular-prose space-one">
+                  <p class="legible semibold">Quintype Office</p>
+                  <p class="legible"><p>No. 29, Old Airport Road, 3rd Floor, <br>Murgesh Palya, Opp Kemp Fort Mall, <br>Bengaluru, Karnataka 560038<br><a target="_blank" class="darkyellow" href="http://www.quintype.com/">Quintype</a></p></p>
+                </div>
+              </div>
+          </div>
+          <div class="no-js-hidden space-one clearfix">
+              <h3 class="visuallyhidden">Map</h3>
+              <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 legible-prose prose prose-type clearfix">
+                  <div
+                    class="border-one leaflet-map col-lg-12 col-md-12 col-sm-12 col-xs-12" id="toner" class="map"
+                    data-label="Quintype Office"
+                    data-zoom="14"
+                    data-marker="12.9596742, 77.6541583">
+                  </div>
+              </div>
+          </div>
+          
+
+          
+
+        
+      </div>
+  </div>
+</section>
+
+
+
+
+<footer class="page-footer page-section clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="regular space-four-bottom">
+          <p class="regular link-silent"><a href="http://hasgeek.com/" target="_blank" class="orange">HasGeek</a> helps people in technology meet each other, collaborate on new opportunities and advance the state of the art. We organize conferences, hacknights, workshops and geekups, and provide tools for communities to self-organize.</p>
+          <p class="regular link-silent">We’ve created conferences around the themes of <a href="http://rootconf.in/" target="_blank" class="orange">devops</a>, <a href="http://metarefresh.in/" target="_blank" class="orange">front end engineering</a>, <a href="http://www.juliacon.in/" target="_blank" class="orange">Julia</a>, <a href="http://fifthelephant.in/" target="_blank" class="orange">big data and cloud computing</a>, <a href="http://jsfoo.in/" target="_blank" class="orange">JavaScript</a> and <a href="http://droidcon.in/" target="_blank" class="orange">Android</a>. Our <a href="http://hasjob.co/" target="_blank">Job Board</a> is used by thousands of geeks every month to find new opportunities.</p>
+          <p class="regular link-silent">HasGeek is a technology company in the media business, bringing software automation to a traditionally people-intensive operation. Over the past six years, HasGeek has organized dozens of conferences attended by thousands of technology professionals, made several thousand connections, and built open source tools that are now used by many communities.</p>
+          <p class="regular link-silent text-center">All organisers, sponsors and attendees are required to follow the conference <a href="code-of-conduct.html" class="orange">code of conduct</a>.</p>
+          <p class="regular link-silent text-center">JSFoo is a conference by <a href="http://hasgeek.com" class="orange">HasGeek</a>. Copyright &copy; 2010–16. All rights reserved.</p>
+          <p class="regular link-silent text-center"><span class="wrap-mobile">For further information / sponsorship:</span> <span class="wrap-mobile"> <a href="mailto:info@hasgeek.com" class="block-link">support@hasgeek.com</a> / <a href="tel: +91-767-633-2020" class="block-link">+91-767-633-2020</a>
+          <div class="legible space-one-top text-center">
+            <ul class="link-silent list-plain">
+              <li class="inline-block gap-1q"><a href="https://twitter.com/jsfoo" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li class="inline-block gap-1q"><a href="https://www.facebook.com/jsfooindia" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li class="inline-block gap-1q"><a href="https://www.youtube.com/user/hasgeek" target="_blank"><i class="fa fa-youtube"></i></a></li>
+              <li class="inline-block gap-1q"><a href="https://www.flickr.com/photos/hasgeek/sets/" target="_blank"><i class="fa fa-flickr"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</div><!-- #page -->
+
+<script type="text/javascript" src="https://use.typekit.net/gfr4qlr.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
+<script src="../_themes/jsfoo2016/js/vendor/modernizr-2.6.2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.3/mustache.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../_themes/jsfoo2016/js/vendor/jquery-2.2.0.min.js"><\/script>')</script>
+  <script src="../_themes/jsfoo2016/js/vendor/bootstrap.min.js.packed.js"></script>
+  <script src="../_themes/jsfoo2016/js/maps.js.packed.js"></script>
+  <script src="../_themes/jsfoo2016/js/main.js.packed.js"></script>
+  
+
+<script>
+// Google Analytics
+if (location.hostname == 'jsfoo.in') {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-19123154-15', 'auto');
+  ga('send', 'pageview');
+}
+</script>
+
+<!-- Prompt IE 6 users to install Chrome Frame. -->
+<!-- chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+<script>
+  $('#show-more').click(function() {
+    $(this).toggleClass('fa-chevron-circle-down');
+    $(this).toggleClass('fa-chevron-circle-up');
+    $('#event-desc').toggleClass('always-hidden');
+  });
+</script>
+
+
+
+</body>
+</html>

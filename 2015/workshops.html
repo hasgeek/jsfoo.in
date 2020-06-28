@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9">     <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js">        <!--<![endif]-->
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Workshops in JSFoo 2015">
+<meta name="author" content="HasGeek and friends">
+
+<meta property="og:title" content="JSFoo 2015 — Workshops"/>
+<meta property="og:image" content="https://jsfoo.in/_themes/jsfoo2015/img/logo.png"/>
+<meta property="og:url" content="https://jsfoo.in/2015/workshops"/>
+<meta property="og:description" content="Workshops in JSFoo 2015"/>
+
+<link rel="shortcut icon" type="image/x-icon" href="https://jsfoo.in/favicon.ico">
+<link rel="icon" type="image/x-icon" href="https://jsfoo.in/favicon.ico">
+
+<title>Workshops — JSFoo 2015</title>
+  <link rel="stylesheet" href="../_themes/jsfoo2015/css/vendor/bootstrap.min.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/jsfoo2015/css/font-awesome.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/jsfoo2015/css/main.css.packed.css"/>
+  
+
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.min.css" />
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600italic,400,600" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Syncopate:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../_baseframe/css/networkbar.css">
+
+<script src="../_themes/jsfoo2015/js/vendor/modernizr-2.6.2.js"></script>
+
+<!-- <link rel="stylesheet" href="/_themes/jsfoo2015/css/fonts.css"> -->
+<script type="text/javascript" src="https://use.typekit.net/gfr4qlr.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script>window.jQuery || document.write('<script src="../_themes/jsfoo2015/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.3/mustache.min.js"></script>
+
+<!-- Custom Audience Pixel Code -->
+<script>(function() {
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = '//connect.facebook.net/en_US/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+_fbq.push(['addPixelId', '1652854178264244']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1652854178264244&amp;ev=PixelInitialized" /></noscript>
+
+<!-- Facebook Conversion Code for Key Page Views - JSFoo -->
+<script>(function() {
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = '//connect.facebook.net/en_US/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6030156043717', {'value':'3000','currency':'INR'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6030156043717&amp;cd[value]=3000&amp;cd[currency]=INR&amp;noscript=1" /></noscript>
+
+</head>
+<body>
+
+<div class="">
+  
+    <div id="hg-bar" class="no-print">
+    <div class="container">
+          <ul id="hg-barlinks">
+            
+    <li id="hg-networkbar-home" class="strong"><a href="https://hasgeek.com/">HasGeek</a></li>
+    <li id="hg-networkbar-hasjob"><a href="https://hasjob.co/">Hasjob</a></li>
+    <li id="hg-networkbar-hgtv"><a href="https://hasgeek.tv/">HGTV</a></li>
+    <li id="hg-networkbar-talkfunnel"><a href="https://talkfunnel.com/">Talkfunnel</a></li>
+    <li id="hg-networkbar-events" class="selected"><a href="workshops.html#" class="hg-submenu">Events</a>
+        <ul>
+          
+    <li id="hg-networkbar-metarefresh"><a href="https://metarefresh.in/">Meta Refresh</a></li>
+    <li id="hg-networkbar-rootconf"><a href="https://rootconf.in/">Rootconf</a></li>
+    <li id="hg-networkbar-fifthelephant"><a href="https://fifthelephant.in/">The Fifth Elephant</a></li>
+    <li id="hg-networkbar-jsfoo"><a href="https://jsfoo.in/">JSFoo</a></li>
+    <li id="hg-networkbar-droidcon"><a href="https://droidcon.in/">Droidcon India</a></li>
+    <li id="hg-networkbar-pastevents" class="hg-menu-section">Past events</li>
+    <li id="hg-networkbar-angularjs-miniconf"><a href="https://metarefresh.in/2014/angularjs-miniconf">AngularJS Miniconf</a></li>
+    <li id="hg-networkbar-cartonama"><a href="https://cartonama.com/2012">Cartonama Conference</a></li>
+    <li id="hg-networkbar-phpcloud"><a href="https://phpcloud.hasgeek.com/">Scaling PHP in the Cloud</a></li>
+    <li id="hg-networkbar-androidcamp"><a href="https://androidcamp.hasgeek.com/">AndroidCamp</a></li>
+    <li id="hg-networkbar-doctypehtml5"><a href="http://www.doctypehtml5.in/">DocType HTML5</a></li>
+        </ul></li>
+          </ul>
+    </div>
+  </div>
+  
+</div>
+  
+<div id="page">
+
+  <div class="container-fluid fill-primary">
+    <div class="row-fluid space-half-bottom">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div id="cog" class="space-one-top">
+          <a class="push-two-top ir logo-small" href="https://jsfoo.in/2015">
+            JSFoo 2015</a>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <nav id="site-nav" class="navbar center-xs">
+              <ul class="list-plain link-silent legible inline-block space-one-top">
+                <!--<li><a class="push-two-top" href="/2015/#conference">Conference</a></li>
+                <li><a class="push-two-top" href="/2015/#workshops">Workshops</a></li>
+                <li><a class="push-two-top" href="/2015/#run-up-events">Run-up Events</a></li>-->
+                <li>
+                  <div class="dropdown link-silent tiny">
+                    <a id="editions" data-toggle="dropdown" href="workshops.html#">&nbsp;Bangalore 2015 <i class="fa fa-caret-down"></i>&nbsp;</a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a class="push-1q" href="https://jsfoo.in/2014/">Bangalore 2014</a></li>
+                      <li><a class="push-1q" href="https://jsfoo.in/2013/">Bangalore 2013</a></li>
+                      <li><a class="push-1q" href="https://jsfoo.in/2012/">Bangalore 2012</a></li>
+                      <li><a class="push-1q" href="https://jsfoo.in/chennai2012/">Chennai 2012</a></li>
+                      <li><a class="push-1q" class="push-1q" href="https://jsfoo.in/pune2012/">Pune 2012</a></li>
+                      <li><a class="push-1q" href="https://jsfoo.in/bangalore2011/">Bangalore 2011</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-sm-4">
+            <div class="flushright space-one center-xs">
+            
+<!--               <a href="https://in.explara.com/e/jsfoo-2015/checkout" class="space-one-top button button-on-dark regular dark" title="JSFoo 2015 Tickets on Explara" target="_blank">Buy Tickets</a> -->
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+
+
+
+
+  
+    
+        
+      
+  
+  <section id="about" class="page-section fill-lightblue">
+  <div class="container-fluid">
+    <div class="col-lg-6 col-xs-12 section-title">
+      <div class="pad-three-left space-three-top huge nopad-xs all-caps prose-type bold darkblue">Workshops</div>
+      
+      
+        <ul class="pad-three-left space-line-top inline-on-mobile list-plain legible prose">
+            <li><a href="workshops.html#sessions">Sessions</a></li>
+          
+            <li><a href="workshops.html#schedules">Schedule</a></li>
+          
+            <li><a href="workshops.html#workshop-venue">Venue</a></li>
+          </ul>
+      
+    </div>
+    <div class="col-lg-6 col-xs-12">
+      <div class="legible-prose calm nopad-xs space-three-top nospace-bottom link-silent">
+        
+          <span><p>JSFoo 2015 features hands-on training workshops:<ul><li>ReactJS by Akshay Gupta and Abhinav Sarkar on 15 September at TERI auditorium</li><li>NodeJS by Shyam Seshadri on 16 September at TERI auditorium</li><li>AngularJS by Shyam Seshadri on 17 September at TERI auditorium.</li><li>NodeBots &amp; JS Hardware by Andrew Fisher on 20th September at Workbench Projects, Ulsoor. </li></ul></p></span>
+        
+      </div>
+      <div>
+        <p class="space-one-top space-half-bottom legible-prose text-center">Sign up to receive updates.</p>
+        <form class="form-horizontal nospace" id='subscribe' action="workshops.html" role="form" autocomplete="off">
+          <div class="text-center">
+            <input type="email" class="subscribe-input" id="subscribe-email" name="subscribe-email" required placeholder="Email"/>
+            <button type="submit" class="subscribe-button prose-type all-caps">Subscribe</button>
+            <img src="../_themes/jsfoo2015/img/ajax-loader.gif" class="ajax-loader"/>
+          </div>
+        </form>
+        <div class="secondary text-center helptext"><p class="subscribe-status nospace"></p></div>
+      </div>  
+      <p class="space-one-top space-half-bottom legible-prose text-center">If you attended JSFoo 2015, we’d love to hear your feedback.</p>
+      <ul class="regular link-silent">
+      <li><a href="https://goo.gl/OXlKAW" target="_blank"http://goo.gl/forms/ynuMmfDQ0N>Feedback form for ReactJS Workshop</a></li>
+      <li><a href="https://goo.gl/yG2Ptk" target="_blank">Feedback form for NodeJS Workshop</a></li>
+      <li><a href="https://goo.gl/fJuQ00 " target="_blank">Feedback form for AngularJS Workshop</a></li>
+      <li><a href="http://goo.gl/forms/ynuMmfDQ0N" target="_blank">Feedback form for Conference</a></li>
+      <li><a href="https://goo.gl/xkHLrA" target="_blank">Feedback form for NodeBots &amp; JS Hardware Workshop</a></li>
+      </ul>
+    </div>
+  </div>
+</section> 
+
+    
+  
+    
+        
+      
+  
+  
+  <section id="sessions" class="clearfix fill-primary">
+<div class="container-fluid">
+  <h2 class="large all-caps text-center push-one">Sessions</h2>
+  
+  <div id="65-a-slow-and-hopefully-heedful-ride-through-reactjs-" class="row push-two-bottom pad-3q session">
+    <div class="row">
+      <h3 class="legible nospace-top medium push-one-top pad-half darkblue bold text-center">A Slow (and Hopefully Heedful) Ride Through ReactJS and Flux</h3>
+      <div class="col-md-4 col-xs-12 speaker-bio">
+        <div class="clearfix nospace-top push-one-top space-half-bottom"><img src="https://images.hasgeek.com/embed/file/19635fa7a29e46adadea7d217c65b6a8" alt="" class="center-block speaker-photo  speaker-photo-small "><img src="https://images.hasgeek.com/embed/file/ec7d04942fb0467791190934936a49cd" alt="" class="center-block speaker-photo  speaker-photo-small "></div>
+        <h4 class="regular prose-type calm all-caps space-1q-top nospace-bottom darkblue bold text-center">Abhinav Sarkar &amp; Tejas Dinkar</h4>
+        
+        
+        <div class="secondary space-1q-top nospace-bottom text-center"><p><strong>Abhinav:</strong> Old school JVM hacker. Loves log files. Wishes he was programming Haskell.</p><p><strong>Tejas:</strong> Modern day aesthetically-relevant hacker. Long time Rubyist, recent JavaScript and Clojure programmer.</p></div>
+        
+      </div>
+      <div class="col-md-8 col-xs-12">
+        
+        <div class="regular nospace-top push-one-top pad-half"><h2 class="legible semibold nospace-top space-half-bottom">Objective</h2><p>ReactJS and Flux as much better front-end engineering battle-axes.</p></div>
+        
+        <div class="regular space-one pad-half link-silent"><h2 class="legible semibold space-half">Description</h2><p>This is an in-depth version of our previous <a class="orange" href="https://metarefresh.talkfunnel.com/2015/1326-a-quick-and-hopefully-painless-ride-through-reactj">introduction to ReactJS workshop</a>.</p><p>We&rsquo;ll go through the fundamentals and philosophy of ReactJS and see how we can write more modular, testable and maintainable JavaScript interfaces.</p><p>We&rsquo;ll try to cover these high-level ideas:</p><ul><li>Setting up a simple ReactJS application.</li>
+<li>Writing UI components that can be re-used across the application.</li><li>HTML-like templating languages (like JSX, react-templates) that make it much easier for designers to write dynamic interactions by themselves.</li><li>Declarative / logic-less UI components that can perform transitions / animations etc.</li><li>We&rsquo;ll try our hands on building a few simple UI components. For example, a menu system like this: <br><img class="space-half" alt="" src="https://s3.amazonaws.com/f.cl.ly/items/430I1j2L3b1C2e2A0W1Q/did-a-thing.gif" title="menu system in react"></li><li>Understanding the Virtual DOM and DOM reconciliation algorithms.</li><li>Server-side rendering for better performance and SEO.</li>
+<li>Using Promises to write better asynchronous components.</li><li>RefluxJS as an implementation of the Flux architecture pattern that simplifies data-flow in heavy JavaScript UIs.</li><li>Testing React components using React.addons.TestUtils and MochaJS.</li></ul></div>
+        <div class="regular space-one pad-half"><h2 class="legible semibold space-half">Requirements</h2><p>Some prior experience in JavaScript, HTML and CSS should be sufficient as far as the content of the workshop is concerned. It&rsquo;d be helpful if you&rsquo;ve played around with React a little bit, deployed a small program and have some idea of what it does. If you&rsquo;re purely considering this just to see what the fuss is all about, we&rsquo;ll try our best to have you converted by the end :)</p>
+<p>There are a few parts that are a bit heavy on theory that will attempt to give you an idea of the inner workings of React. Most of it otherwise would be practical problems that we&rsquo;ll solve in real-time and anecdotes from our experiences using it in production.</p>
+<p class="link-silent">Do setup your laptop with the lastest Chrome, Sublime Text editor, node, npm and a terminal. If you can setup React on your own, that&rsquo;d be great; we will guide you through this <a class="orange" href="https://github.com/nilenso/reactjs-workshop15">https://github.com/nilenso/reactjs-workshop15</a> to help you set it up otherwise.</p></div>
+        
+        <div class="regular space-one-top pad-half link-silent session-links"><p class="legible semibold">Links</p><ul><li><a class="orange" href="http://nilenso.com" target="_blank">nilenso.com</a></li><li><a class="orange" href="http://quintype.com" target="_blank">quintype.com</a></li><li><a class="orange" href="http://github.com/gja" target="_blank">github.com/gja</a></li><li><a class="orange" href="http://github.com/abhin4v" target="_blank">github.com/abhin4v</a></li><li><a class="orange" href="http://tinyurl.com/a-taste-of-clojure" target="_blank">tinyurl.com/a-taste-of-clojure</a></li><li><a class="orange" href="http://github.com/nilenso/reactjs-workshop15" target="_blank">github.com/nilenso/reactjs-workshop15</a></li></ul></div>
+        <ul class="list-plain regular space-one-top pad-half">
+          <li class="space-1q">September 15, 2015</li>
+          <li class="space-1q">8:30 AM to 5:35 PM</li>
+          <li class="space-1q"><i class="fa fa-map-marker"></i>&nbsp; The Energy and Research Institute (TERI), Bangalore</li>
+          <li class="large space-1q bold">Rs. 6000</li>
+          <li class="space-1q"><a class="orange" target="_blank" href="https://jsfoo.talkfunnel.com/2015/65-a-slow-and-hopefully-heedful-ride-through-reactjs-">Read workshop proposal</a></li>
+        </ul>
+<!--         <div class="space-one-top pad-half"><a href="https://in.explara.com/e/jsfoo-2015/checkout" class="button button-on-dark regular dark ticket-btn" title="JSFoo 2015 Tickets on Explara" target="_blank">Buy Tickets</a></div> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div id="62-nodejs-workshop" class="row push-two-bottom pad-3q session">
+    <div class="row">
+      <h3 class="legible nospace-top medium push-one-top pad-half darkblue bold text-center">NodeJS Workshop</h3>
+      <div class="col-md-4 col-xs-12 speaker-bio">
+        <div class="clearfix nospace-top push-one-top space-half-bottom"><img src="https://imgee.s3.amazonaws.com/imgee/ef1df74a3c734363a3d2badd86a092ed.jpeg" alt="" class="center-block speaker-photo "></div>
+        <h4 class="regular prose-type calm all-caps space-1q-top nospace-bottom darkblue bold text-center">Shyam Seshadri</h4>
+        <div class="link-silent regular-prose space-1q-top nospace-bottom text-center"><a href="https://twitter.com/omniscient1" target="_blank">@omniscient1</a></div>
+        <p class="secondary italic space-1q-top nospace-bottom darkyellow text-center">Head of Engineering at Hopscotch.in</p>
+        <div class="secondary space-1q-top nospace-bottom text-center"><p>I have been conducting hands-on trainings in AngularJS and NodeJS for over 2 years now, and have conducted over 40 workshops for various companies across the world. And every single one of my clients loves the hands-on nature of the trainings (look at my twitter for some examples).</p><p>I have also written two books for AngularJS for O&rsquo;Reilly, and the latest one is called AngularJS Up and Running. I am an Ex-Googler who was part of the original AngularJS team, and now enjoy spending my time running trainings and workshops.</p></div>
+        
+      </div>
+      <div class="col-md-8 col-xs-12">
+        
+        <div class="regular nospace-top push-one-top pad-half"><h2 class="legible semibold nospace-top space-half-bottom">Objective</h2><p>This workshop is for JS Developers looking to get a head start in understanding NodeJS and want to learn how to use it for their own projects, as well as Developers who want to be able to quickly develop rest servers for their projects. By the end of this, developers will know how to start writing NodeJS applications, and understand the various bits and pieces of a NodeJS application.</p></div>
+        
+        <div class="regular space-one pad-half link-silent"><h2 class="legible semibold space-half">Description</h2><p>The NodeJS workshop will walk developers through starting their very own NodeJS projects from scratch. As part of the workshop, we will cover:</p><ul><li>What is NodeJS, and how does it work?</li><li>The NPM system and adding modular dependencies</li><li>Understanding Package.json</li>NodeJS’ single threaded architecture and the Event Loop</li><li>Handling Async behavior for rapid processing</li><li>Working with external modules</li><li>Understanding ExpressJS</li><li>Creating configuration driven NodeJS servers</li><li>Working with MongoDB (If time permits)</li></ul><p>Developers will work with one application that will be developed from scratch, step by step, during this entire workshop.</p></div>
+        <div class="regular space-one pad-half"><h2 class="legible semibold space-half">Requirements</h2><p>Requirements for attendees:</p><ul><li>Prior JS experience (2+ years minimum)</li><li>Understanding of Servers and REST API</li><li>Understanding of Asynchronous APIs and calls</li><li>Comfortable with command line</li></ul><p>System Requirements:</p><ul><li>NodeJS (v0.12+)</li><li>Git (Not Github, but Git)</li><li>MongoDB (Will try and provide a common one, but just in case)</li><li>WebStorm </li><li>Your own laptops with all these setup</li></ul></div>
+        
+        <div class="regular space-one-top pad-half link-silent session-links"><p class="legible semibold">Links</p><ul><li><a class="orange" href="http://www.linkedin.com/in/shyamseshadri" target="_blank">www.linkedin.com/in/shyamseshadri</a></li><li><a class="orange" href="http://twitter.com/omniscient1" target="_blank">twitter.com/omniscient1</a></li><li><a class="orange" href="http://twitter.com/omniscient1/favorites" target="_blank">twitter.com/omniscient1/favorites</a></li><li><a class="orange" href="http://twitter.com/FundooSolutions/favorites" target="_blank">twitter.com/FundooSolutions/favorites</a></li></ul></div>
+        <ul class="list-plain regular space-one-top pad-half">
+          <li class="space-1q">September 16, 2015</li>
+          <li class="space-1q">9:45 AM to 6 PM</li>
+          <li class="space-1q"><i class="fa fa-map-marker"></i>&nbsp; The Energy and Research Institute (TERI), Bangalore</li>
+          <li class="large space-1q bold">Rs. 12000</li>
+          <li class="space-1q"><a class="orange" target="_blank" href="https://jsfoo.talkfunnel.com/2015/62-nodejs-workshop">Read workshop proposal</a></li>
+        </ul>
+<!--         <div class="space-one-top pad-half"><a href="https://in.explara.com/e/jsfoo-2015/checkout" class="button button-on-dark regular dark ticket-btn" title="JSFoo 2015 Tickets on Explara" target="_blank">Buy Tickets</a></div> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div id="63-angularjs-workshop" class="row push-two-bottom pad-3q session">
+    <div class="row">
+      <h3 class="legible nospace-top medium push-one-top pad-half darkblue bold text-center">AngularJS Workshop</h3>
+      <div class="col-md-4 col-xs-12 speaker-bio">
+        <div class="clearfix nospace-top push-one-top space-half-bottom"><img src="https://imgee.s3.amazonaws.com/imgee/ef1df74a3c734363a3d2badd86a092ed.jpeg" alt="" class="center-block speaker-photo "></div>
+        <h4 class="regular prose-type calm all-caps space-1q-top nospace-bottom darkblue bold text-center">Shyam Seshadri</h4>
+        <div class="link-silent regular-prose space-1q-top nospace-bottom text-center"><a href="https://twitter.com/omniscient1" target="_blank">@omniscient1</a></div>
+        <p class="secondary italic space-1q-top nospace-bottom darkyellow text-center">Head of Engineering at Hopscotch.in</p>
+        <div class="secondary space-1q-top nospace-bottom text-center"><p>I have been conducting hands-on trainings in AngularJS and NodeJS for over 2 years now, and have conducted over 40 workshops for various companies across the world. And every single one of my clients loves the hands-on nature of the trainings (look at my twitter for some examples).</p><p>I have also written two books for AngularJS for O&rsquo;Reilly, and the latest one is called AngularJS Up and Running. I am an Ex-Googler who was part of the original AngularJS team, and now enjoy spending my time running trainings and workshops.</p></div>
+        
+      </div>
+      <div class="col-md-8 col-xs-12">
+        
+        <div class="regular nospace-top push-one-top pad-half"><h2 class="legible semibold nospace-top space-half-bottom">Objective</h2><p>AngularJS has been around for quite a few years. Get to learn AngularJS as it was designed, to get the optimal use, and understand how to write AngularJS 2 ready code today. Developers will get a quick overview on the basic core parts of AngularJS, what to use it for, and how to write AngularJS code in such a way that it makes it easy to transfer to AngularJS 2 when it is ready. Also, we will cover what is changing in AngularJS 2, as well as some of the reasons for the same.</p></div>
+        
+        <div class="regular space-one pad-half link-silent"><h2 class="legible semibold space-half">Description</h2><p>The workshop will walk developers very quickly through the basics of AngularJS, cover some of the advanced concepts around Services, Directives, and then jump into AngularJS 2</p><ul><li>AngularJS Controllers</li>
+      <li>AngularJS services, when to create them and how to use them</li><li>Understanding routing in AngularJS - UI-Router</li><li>AngularJS directives - Basics and Advanced</li><li>What is changing in AngularJS 2</li><li>Writing code in AngularJS 2 friendly way today</li></ul><p>This workshop will again take one end to end example, and build that from scratch along with the attendees so that everyone gets an idea of how AngularJS works within the context of the a larger application framework.</p></div>
+        <div class="regular space-one pad-half"><h2 class="legible semibold space-half">Requirements</h2><p>Requirements for attendees:</p>
+<ul>
+<li>Prior JS experience (1+ years minimum)</li>
+<li>Understanding of Asynchronous APIs and calls</li>
+<li>Prior experience in AJAX and MVC frameworks <em>highly recommended</em></li>
+<li>Comfortable with command line</li>
+</ul>
+<p>System Requirements:</p>
+<ul>
+<li>NodeJS (v0.12+)</li>
+<li>Git (Not Github, but Git)</li>
+<li>WebStorm (Optional, but recommended!)</li>
+<li>Your own laptops with all these setup</li>
+</ul></div>
+        
+        <div class="regular space-one-top pad-half link-silent session-links"><p class="legible semibold">Links</p><ul><li><a class="orange" href="http://www.linkedin.com/in/shyamseshadri" target="_blank">www.linkedin.com/in/shyamseshadri</a></li><li><a class="orange" href="http://twitter.com/omniscient1" target="_blank">twitter.com/omniscient1</a></li><li><a class="orange" href="http://twitter.com/omniscient1/favorites" target="_blank">twitter.com/omniscient1/favorites</a></li><li><a class="orange" href="http://twitter.com/FundooSolutions/favorites" target="_blank">twitter.com/FundooSolutions/favorites</a></li></ul></div>
+        <ul class="list-plain regular space-one-top pad-half">
+          <li class="space-1q">September 17, 2015</li>
+          <li class="space-1q">8:45 AM to 5:35 PM</li>
+          <li class="space-1q"><i class="fa fa-map-marker"></i>&nbsp; The Energy and Research Institute (TERI), Bangalore</li>
+          <li class="large space-1q bold">Rs. 12000</li>
+          <li class="space-1q"><a class="orange" target="_blank" href="https://jsfoo.talkfunnel.com/2015/63-angularjs-workshop">Read workshop proposal</a></li>
+        </ul>
+<!--         <div class="space-one-top pad-half"><a href="https://in.explara.com/e/jsfoo-2015/checkout" class="button button-on-dark regular dark ticket-btn" title="JSFoo 2015 Tickets on Explara" target="_blank">Buy Tickets</a></div> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div id="39-nodebots-js-hardware-workshop" class="row push-two-bottom pad-3q session">
+    <div class="row">
+      <h3 class="legible nospace-top medium push-one-top pad-half darkblue bold text-center">NodeBots &amp; JS Hardware Workshop</h3>
+      <div class="col-md-4 col-xs-12 speaker-bio">
+        <div class="clearfix nospace-top push-one-top space-half-bottom"><img src="https://images.hasgeek.com/embed/file/f8de87476036417cbd8a261c0f1ccd6c" alt="" class="center-block speaker-photo "></div>
+        <h4 class="regular prose-type calm all-caps space-1q-top nospace-bottom darkblue bold text-center">Andrew Fisher</h4>
+        <div class="link-silent regular-prose space-1q-top nospace-bottom text-center"><a href="https://twitter.com/ajfisher" target="_blank">@ajfisher</a></div>
+        <p class="secondary italic space-1q-top nospace-bottom darkyellow text-center">CTO &amp; Head of Data Science for JBA</p>
+        <div class="secondary space-1q-top nospace-bottom text-center"><p>Andrew Fisher is a member of the core Johnny-Five team, the most used framework for JS + Hardware, and is the creator and lead maintainer of node-pixel, an open source project for controlling LEDs from JavaScript. He is a co-author of the book, &ldquo;Make: JavaScript Robotics&rdquo; and has helped organise and run NodeBots workshops for thousands of developers around the region including Australia, China and Sri Lanka. Andrew also helps design hardware for teaching NodeBots workshops. </p>
+<p>When not building robots, Andrew is the Chief Technology Officer and Head of Data Science for JBA, an Australian based consultancy focused on customer experience analysis and design.</p></div>
+        
+      </div>
+      <div class="col-md-8 col-xs-12">
+        <div class="regular nospace-top push-one-top pad-half"><img src="https://images.hasgeek.com/embed/file/f08ab1783d894fa38f63da1fd3ea16d3" alt="https://images.hasgeek.com/embed/file/f08ab1783d894fa38f63da1fd3ea16d3"/><p class="tiny space-1q-top">Photos by Andrew Vouliotis, Andrey Sidorov, Patrick Catanzariti</p></div>
+        <div class="regular nospace-top push-one-top pad-half"><h2 class="legible semibold nospace-top space-half-bottom">Objective</h2><p>As the Internet of Things takes off, building devices that can operate in the physical world but can talk to the Web becomes an important part of the skills of the web developer.</p>
+<p>This workshop will provide a good foundation for how you can use JavaScript to be able to work with and build physical Internet Connected Things as well as Robots. </p></div>
+        <div class="pad-half"> <iframe width="100%" height="400" src="https://www.youtube.com/embed/LMZgz82PjtI" frameborder="0" allowfullscreen></iframe> </div>
+        <div class="regular space-one pad-half link-silent"><h2 class="legible semibold space-half">Description</h2><p>As well as being a great web language, JavaScript is well suited to working with the physical world too. </p>
+<p>This workshop will be a hands on exploration of NodeBots - a JS framework for building web connected, physical world things - culminating in a BattleBots session at the end of the day.</p><p>The session will start with an introduction to the nodebots stack covering how to use javascript to control physical things with examples focussed on some common tasks in order to get everyone up and running as quickly as possible.</p><p>From there we will get into small teams of 2-3 people and build a SimpleBot with the aim of competing in a Sumo Battle at the end of the day. SimpleBots are highly configurable and customisable, yet very straightforward wheeled robots designed for teaching. Augmented with some creativity and some code they are also great little battle bots.</p>
+<p>The Sumo battle challenge is designed to teach fundamentals of construction (physical and electronics), drive mechanisms and control and real world event handling, as well as being just lots of fun!</p><p>Participants will leave having a good knowledge of the JS Hardware stack, how to start working with simple electronics using JavaScript and having designed and built a robot based on requirements.</p><p>The hardware components for the workshop will be supplied. Participant Kit includes <ul><li>Arduino Nano</li><li>Jumper wires</li><li>Battery holder 4xAA</li><li>Ultrasonic sensor</li><li>Two CR Servos</li><li>Two Breadboards</li><li>USB cable</li><li>Chassis and wheels</li><li>Batteries</li><li>Two Microservos</li></ul></p></div>
+        <div class="regular space-one pad-half"><h2 class="legible semibold space-half">Requirements</h2><p>Participants should have an good knowledge of JavaScript and at least familiarity with NodeJS as these will be assumed knowledge. No assumptions are made regarding hardware or electronics knowledge as this will be covered in the session enough to get you going (if you&rsquo;re an electrical engineer you&rsquo;re welcome to come too though!).</p><p>All participants will need to have a laptop that can run nodejs and arduino on it. </p></div>
+        <div class="regular space-one-top pad-half link-silent"><img src="https://images.hasgeek.com/embed/file/ad604e1d51304b84b9d90d14bca5fe4d" class="preview-photos"/><img src="https://images.hasgeek.com/embed/file/c33e824a5ed04c09bc1df6053c564177" class="preview-photos"/><img src="https://images.hasgeek.com/embed/file/1e9beab2532947c393b4f8d8ad1c136d" class="preview-photos"/><img src="https://images.hasgeek.com/embed/file/ebc09147c372499483dda39fc4772bb1" class="preview-photos"/></div>
+        <div class="regular space-one-top pad-half link-silent session-links"><p class="legible semibold">Links</p><ul><li><a class="orange" href="http://www.slideshare.net/andrewjfisher/droids-java-script-and-web-connected-hardware" target="_blank">www.slideshare.net/andrewjfisher/droids-java-script-and-web-connected-hardware</a></li><li><a class="orange" href="http://twitter.com/ajfisher" target="_blank">twitter.com/ajfisher</a></li><li><a class="orange" href="http://github.com/ajfisher" target="_blank">github.com/ajfisher</a></li><li><a class="orange" href="http://droidsjs.ajf.io" target="_blank">droidsjs.ajf.io</a></li><li><a class="orange" href="http://github.com/nodebotsau/simplebot" target="_blank">github.com/nodebotsau/simplebot</a></li></ul></div>
+        <ul class="list-plain regular space-one-top pad-half">
+          <li class="space-1q">September 20, 2015</li>
+          <li class="space-1q">10 AM to 6 PM</li>
+          <li class="space-1q"><i class="fa fa-map-marker"></i>&nbsp; WorkBench Projects, Halasuru Metro Station, Bangalore</li>
+          <li class="large space-1q bold">Rs. 7500 <span class="secondary">(includes full hardware kit)</span><p class="secondary medium">Nodebots workshop tickets for a team(two/three) are also available</p></li>
+          <li class="space-1q"><a class="orange" target="_blank" href="https://jsfoo.talkfunnel.com/2015/39-nodebots-js-hardware-workshop">Read workshop proposal</a></li>
+        </ul>
+<!--         <div class="space-one-top pad-half"><a href="https://in.explara.com/e/jsfoo-2015/checkout" class="button button-on-dark regular dark ticket-btn" title="JSFoo 2015 Tickets on Explara" target="_blank">Buy Tickets</a></div> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+</section>
+
+
+    
+  
+    
+        
+      
+<script id="scheduletemplate" type="text/x-mustache-template">
+  <h3 class="text-center space-two legible">{{date}}</h3>
+  <table class="schedule-table" id="{{tableid}}">
+    <thead>
+      <tr>
+        <th class="time semi-bold text-center regular">Time</th>
+        {{#rooms}}
+        {{#track}}
+          <th class="track{{track}} semi-bold text-center regular" data-td="track-{{track}}">{{title}}</th>
+        {{/track}}
+        {{^track}}
+          <th class="track{{track}} semi-bold tab-active text-center regular" data-td="track-{{track}}">{{title}}</th>
+        {{/track}}
+        {{/rooms}}
+      </tr>
+    </thead>
+    <tbody>
+    {{#slots}}
+      {{#issession}}
+      <tr>
+        <td class="time" scope="row"><p class="regular bold">{{slot}}</p></td>
+        {{#sessions}}
+        {{#is_break}}
+        <td colspan="2" class="centered" rowspan={{rowspan}}>
+          <h4 class="space-1q regular">{{title}}</h4>
+          <p class="space-1q secondary"><em>{{start}} - {{end}}</em></p> 
+        </td>       
+        {{/is_break}}
+        {{^is_break}}
+        {{#track}}
+          <td class="track-{{track}}" rowspan={{rowspan}}>
+        {{/track}}
+        {{^track}}
+          <td class="track-{{track}} tab-active" rowspan={{rowspan}}>
+        {{/track}}
+            <h4 class="link-silent space-1q regular">
+              {{#proposal_url}}
+              <a href="https://jsfoo.in/2015/{{proposal_url}}" target="_blank" class="orange">{{title}}</a>
+              {{/proposal_url}}
+              {{^proposal_url}}
+              {{title}}
+              {{/proposal_url}}
+              {{#description}}
+              <i class="fa fa-chevron-circle-down lightgray expand"></i>
+              {{/description}}
+            </h4>
+            {{#description}}
+            <div class="space-1q secondary-prose description-text text-left">{{{description}}}</div>
+            {{/description}}
+            {{#speaker}}
+            <p class="space-1q regular-prose">{{speaker}}</p>
+            {{/speaker}}
+            {{#title}}
+            <p class="space-1q secondary"><em>{{start}} - {{end}}</em></p>
+            {{/title}}
+          </td>
+        {{/is_break}}
+        {{/sessions}}
+      </tr>
+      {{/issession}}
+    {{/slots}}
+    </tbody>
+  </table>
+</script>
+
+<section id="schedules" class="page-section clearfix fill-lightblue push-two-top push-four-bottom">
+  <div class="container schedule-container">
+    <div class="text-center" id="workshop-schedule">
+      <h2 class="legible medium prose-type all-caps text-center space-one-top">Workshop Schedule</h2>
+      <div class="schedule-table-container text-center" id="workshopschedule">
+        <p class="text-center loadingtxt"><a class="button dark regular" href="https://jsfoo.talkfunnel.com/2015/schedule">View Schedule</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+    
+  
+    
+        
+      
+  
+  
+  <section id="workshop-venue" class="venue push-two clearfix fill-darkblue">
+  <div class="container">
+      <div class="row">
+          <h3 class="col-sm-12 col-xs-12 legible medium all-caps text-center space-one prose-type"> Workshop Venues </h3>
+      </div>
+      <div class="row">
+      
+          <div class="pad-line">
+              <div class="col-md-10 col-md-offset-1 col-sm-12 fill-darkgray col-xs-12 legible-prose text-center">
+                <div class="regular-prose space-one">
+                  <p class="legible semibold">The Energy and Research Institute (TERI)</p>
+                  <p class="legible"><p>4th Main Rd, Domlur II Stage, <br>Domlur, Bangalore, <br>Karnataka 560008, India<br><a target="_blank" class="darkyellow" href="http://www.teriin.org/index.php?option=com_content&view=article&id=93&Itemid=65">TERI</a></p></p>
+                </div>
+              </div>
+          </div>
+          <div class="no-js-hidden space-one clearfix">
+              <h3 class="visuallyhidden">Map</h3>
+              <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 legible-prose prose prose-type clearfix">
+                  <div
+                    class="border-one leaflet-map col-lg-12 col-md-12 col-sm-12 col-xs-12" id="toner" class="map"
+                    data-label="The Energy and Research Institute, Domlur"
+                    data-zoom="14"
+                    data-marker="12.9637, 77.6381">
+                  </div>
+              </div>
+          </div>
+          
+
+          
+
+        
+          <div class="pad-line">
+              <div class="col-md-10 col-md-offset-1 col-sm-12 fill-darkgray col-xs-12 legible-prose text-center">
+                <div class="regular-prose space-one">
+                  <p class="legible semibold">WorkBench Projects</p>
+                  <p class="legible"><p>Halasuru Metro Station, <br>Old Madras Road, Gupta Layout, <br>Halasuru, Bengaluru 560008,<br>Karnataka, India<br><a target="_blank" class="darkyellow" href="https://www.workbenchprojects.com/">WorkBench Projects</a></p></p>
+                </div>
+              </div>
+          </div>
+          <div class="no-js-hidden space-one clearfix">
+              <h3 class="visuallyhidden">Map</h3>
+              <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 legible-prose prose prose-type clearfix">
+                  <div
+                    class="border-one leaflet-map col-lg-12 col-md-12 col-sm-12 col-xs-12" id="toner" class="map"
+                    data-label="WorkBench Projects, Halasuru"
+                    data-zoom="14"
+                    data-marker="12.976374, 77.62667399999998">
+                  </div>
+              </div>
+          </div>
+          
+
+          
+
+        
+      </div>
+  </div>
+</section>
+
+
+    
+  
+
+
+
+<footer class="page-footer page-section clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="text-center regular space-four-bottom">
+          <p class="regular link-silent">All organisers, sponsors and attendees are required to follow the conference <a href="code-of-conduct.html" class="orange">code of conduct</a>.</p>
+          <p class="regular link-silent">JSFoo is a conference by <a href="http://hasgeek.com" class="orange">HasGeek</a>. Copyright &copy; 2010–15. All rights reserved.</p>
+          <p><script type="text/javascript">
+          //<![CDATA[
+          <!--
+          var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+          "x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+          " r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!55{)rt{y+xx=l;=+;" +
+          "lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+          "\"(5),5\\\"\\\\[W@QGJEI2Z00\\\\\\\\]M\\\\r0\\\\s=>7>?6+5>02\\\\\\\\5;8<mn22" +
+          "\\\\09\\\\\\\"\\\\\\\\\\\\&.; -j-+`/35\\\\0}\\\\ML\\\\\\\\\\\\\\\\XP32\\\\0" +
+          "3\\\\03\\\\\\\\XdsYyg02\\\\03\\\\00\\\\\\\\25\\\\0@\\\\ABcI27\\\\0]\\\\BKGL" +
+          "RVp zt~9tv~hajjGoe27\\\\0F\\\\25\\\\04\\\\01\\\\\\\\32\\\\05\\\\03\\\\\\\\2" +
+          "3\\\\05\\\\03\\\\\\\\0L6W01\\\\\\\\03\\\\06\\\\02\\\\\\\\\\\\n@\\\\`?px88$7" +
+          ">'f=*2-'_K\\\\U\\\\\\\\\\\\\\\\(\\\"}fo;n uret}r);+)y+^(i)t(eAodrCha.c(xdeC" +
+          "oarChomfrg.intr=So+7;12%=;y++)y55i<f({i+)i+l;i<0;i=r(foh;gten.l=x,l\\\"\\\\" +
+          "\\\"\\\\o=i,r va){,y(x fontincfu)\\\"\")"                                    ;
+          while(x=eval(x));
+          //
+          //]]>
+          </script>
+          <a href="tel:+917676332020" class="link-silent">+91-767-633-2020</a></p>
+          <div class="legible space-one-top">
+            <ul class="link-silent list-plain">
+              <li class="inline-block gap-1q"><a href="https://twitter.com/jsfooindia" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li class="inline-block gap-1q"><a href="https://www.facebook.com/jsfooindia" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li class="inline-block gap-1q"><a href="https://www.youtube.com/user/hasgeek" target="_blank"><i class="fa fa-youtube"></i></a></li>
+              <li class="inline-block gap-1q"><a href="https://www.flickr.com/photos/hasgeek/sets/" target="_blank"><i class="fa fa-flickr"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</div><!-- #page -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="../_themes/jsfoo2015/js/vendor/bootstrap.min.js.packed.js"></script>
+  <script src="../_themes/jsfoo2015/js/maps.js.packed.js"></script>
+  <script src="../_themes/jsfoo2015/js/main.js.packed.js"></script>
+  
+
+<script>
+// Google Analytics
+if (location.hostname == 'jsfoo.in') {
+  var _gaq=[['_setAccount','UA-19123154-15'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+}
+</script>
+
+<!-- Prompt IE 6 users to install Chrome Frame. -->
+<!-- chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+<script>
+  $('#show-more').click(function() {
+    $(this).toggleClass('fa-chevron-circle-down');
+    $(this).toggleClass('fa-chevron-circle-up');
+    $('#event-desc').toggleClass('always-hidden');
+  });
+</script>
+</body>
+</html>
